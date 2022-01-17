@@ -52,9 +52,9 @@ static const Rule rules[] = {
 	{ "Ardour",	NULL,           NULL,		1 << 4,       0,           0,         0,        -1 },
 	{ "Carla2",	NULL,       	NULL,	        1 << 4,       1,           0,         0,        -1 },
 	/* { "spotify",	NULL,   	NULL, 	        1 << 4,       1,           0,         0,        -1 },*/
-	{ "mpv",	NULL,   	NULL, 	        0,            1,           0,         0,        -1 },
+	/* { "mpv",	NULL,   	NULL, 	        0,            1,           0,         0,        -1 }, */
 	{ "Google Earth Pro", NULL,     NULL,		1 << 8,       0,           0,         0,        -1 },
-	{ "discord",	NULL,           NULL,	        0,            1,           0,         0,        -1 },
+	{ "Zenmonitor",	NULL,           NULL,	        0,            1,           0,         0,        -1 },
 	{ "Sxiv", 	NULL,           NULL, 	        0,            1,           0,         0,        -1 },
 	{ "SimpleScreenRecorder", NULL, NULL, 	        0,            1,           0,         0,        -1 },
 	{ TERMCLASS,    NULL,       	NULL,           0,            0,           1,         0,        -1 },
@@ -167,8 +167,8 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_Tab,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_q,		killclient,	{0} },
 	{ MODKEY|ShiftMask,		XK_q,		spawn,		SHCMD("qliveplayer") },
-	{ MODKEY,			XK_w,		spawn,		SHCMD("$BROWSER") },
-	{ MODKEY|ShiftMask,		XK_w,		spawn,		SHCMD("librewolf -P neno") },
+	{ MODKEY,			XK_w,		spawn,		SHCMD("librewolf") },
+	{ MODKEY|ShiftMask,		XK_w,		spawn,		SHCMD("chromium") },
 	{ MODKEY,			XK_e,		spawn,		SHCMD(TERMINAL " -e btop") },
 	{ MODKEY|ShiftMask,		XK_e,		spawn,		SHCMD("google-earth-pro") },
 	{ MODKEY,			XK_r,		spawn,		SHCMD(TERMINAL " -e lf") },
@@ -189,7 +189,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_bracketleft,		spawn,		SHCMD("mpc seek -60") },
 	{ MODKEY,			XK_bracketright,	spawn,		SHCMD("mpc seek +10") },
 	{ MODKEY|ShiftMask,		XK_bracketright,	spawn,		SHCMD("mpc seek +60") },
-	{ MODKEY,			XK_backslash,		spawn,		SHCMD("") },
+	{ MODKEY,			XK_backslash,		spawn,		SHCMD("librewolf -P neno") },
 	{ MODKEY|ShiftMask,		XK_backslash,		spawn,		SHCMD("") },
 
 	{ MODKEY,			XK_a,		spawn,		SHCMD("st") },
